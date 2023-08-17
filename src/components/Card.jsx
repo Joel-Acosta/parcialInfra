@@ -1,9 +1,16 @@
-import React from 'react'
+import './Card.css'
 
-const Hola = () => {
+
+const Card = ({user}) => {
+ 
   return (
-    <div>Hola</div>
+    <div className='card'>
+        
+        <h4>Hola {user.nombre? user.nombre : ''}</h4>
+        <h4>Su password es: {user.password ? user.password : ''}</h4>
+
+    </div>
   )
 }
 
-export default Hola
+export default Card
